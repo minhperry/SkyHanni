@@ -264,4 +264,13 @@ public class MiscConfig {
     @Accordion
     @Expose
     public HideFarEntitiesConfig hideFarEntities = new HideFarEntitiesConfig();
+
+    @Expose
+    @ConfigOption(
+        name = "Transparent Item Skin",
+        desc = "Fix black background rendering of some talisman. §4Requires a restart after toggling!§r"
+    )
+    @ConfigEditorBoolean
+    @FeatureToggle
+    public boolean transparentSkin = false;
 }
